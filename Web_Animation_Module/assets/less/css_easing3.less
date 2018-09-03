@@ -1,0 +1,61 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	padding: 20px;
+	text-align: center;
+
+	h1{
+		font-family: sans-serif;
+		margin-top: 20px;
+		margin-bottom: 100px;
+	}
+	div.circles{
+		background-color: lightblue;
+		border-radius: 50%;
+		font-family: sans-serif;
+		font-weight: bold;
+		height: 150px;
+		line-height: 140px;
+		margin-bottom: 20px;
+		width: 150px;
+	}
+	div#circle1{
+		animation: circle_A 4s infinite;
+		animation-timing-function: cubic-bezier(.25,.97,.52,-0.27);
+		/*animation-timing-function: linear;*/
+		/*animation-timing-function: steps(2, start);*/
+		/*animation-timing-function: steps(2, end);*/
+		background-color: lightblue;
+	}
+	div#circle2{
+		animation: circle_B 4s infinite;
+		animation-timing-function: ease-out;
+		background-color: lightgreen;
+	}
+
+	@keyframes circle_A {
+		0%{
+			transform: translate3d(0px, 0px, 0px);
+		}
+		50%{
+			transform: translate3d(800px, 0px, 0px) rotate(-180deg);
+		}
+		100%{
+			transform: translate3d(0px, 0px, 0px);
+		}
+	}
+
+	@keyframes circle_B {
+		0%{
+			transform: translate3d(0px, 0px, 0px);
+		}
+		50%{
+			transform: translate3d(800px, 0px, 0px) scale(.5);
+		}
+		100%{
+			transform: translate3d(0px, 0px, 0px);
+		}
+	}
+}

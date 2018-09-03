@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+div#main_content {
+  height: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  width: 816px;
+}
+div#main_content div.emoji_containers {
+  border: 3px solid grey;
+  display: inline-block;
+  height: 175px;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  vertical-align: top;
+  width: 175px;
+}
+div#main_content div.emoji_containers::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  height: 195px;
+  left: 0px;
+  transition: background-color 0.6s ease;
+  top: 0px;
+  width: 195px;
+  z-index: 1;
+}
+div#main_content div.emoji_containers:hover img.images {
+  transform: translate3d(0px, -180px, 0px);
+}
+div#main_content div.emoji_containers:hover::before {
+  background-color: #F46767;
+}
+div#main_content div.emoji_containers img.images {
+  position: relative;
+  margin: 10px auto 10px auto;
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.5s cubic-bezier(0, 1.54, 1, -0.59);
+  width: 150px;
+  z-index: 2;
+}

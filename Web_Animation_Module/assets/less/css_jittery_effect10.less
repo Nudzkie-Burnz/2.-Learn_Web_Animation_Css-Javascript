@@ -1,0 +1,61 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	text-align: center;
+	h1{
+		font-size: 20px;
+		font-family: sans-serif;
+		font-weight: bold;
+		margin: 20px auto;
+	}
+	#square{
+		background-color: rgb(0, 128, 187);
+		color: red;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: sans-serif;
+		height: 200px;
+		line-height: 180px;
+		margin: 0px auto;
+		width: 200px;
+
+		&:hover{
+			animation: freezing .3s infinite ease-in-out;
+		}
+
+		@keyframes freezing {
+			10%{
+				transform: translate3d(-4px, -3px, 0px) scale3d(1.02, 1.02, 0);
+			}
+			20%{
+				transform: translate3d(5px, 6px, 0px) scale3d(.5, .5, 0);
+			}
+			30%{
+				transform: translate3d(-4px, -3px, 0px) scale3d(1.02, 1.02, 0);
+			}
+			40%{
+				transform: translate3d(6px, 7px, 0px) scale3d(.7, .7, 0);
+			}
+			50%{
+				transform: translate3d(-0px, -4px, 0px) scale3d(1.2, 1.2, 0);
+			}
+			60%{
+				transform: translate3d(4px, 3px, 0px) scale3d(.9, .9, 0);
+			}
+			70%{
+				transform: translate3d(-1px, -5px, 0px) scale3d(2, 2, 0);
+			}
+			80%{
+				transform: translate3d(-10px, -15px, 0px) scale3d(.9, .9, 0);
+			}
+			90%{
+				transform: translate3d(-2px, -3px, 0px) scale3d(1.5, 1.5, 0);
+			}
+			100%{
+				transform: translate3d(4px, 1px, 0px) scale3d(.9, .9, 0);
+			}
+		}
+	}
+}

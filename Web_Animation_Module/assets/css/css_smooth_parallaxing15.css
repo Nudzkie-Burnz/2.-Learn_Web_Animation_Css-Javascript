@@ -1,0 +1,81 @@
+* {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #ddd;
+}
+body div#main_contents {
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  width: 700px;
+}
+body div#main_contents div#round_circle {
+  background: url('../images/round_circle.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 40%;
+  height: 130vh;
+  left: 0px;
+  opacity: .75;
+  position: fixed;
+  top: -50px;
+  width: 100vw;
+  z-index: -15;
+}
+body div#main_contents div#mr_fart {
+  background: url('../images/mr. fart.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20%;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 15px;
+  width: 100vw;
+  z-index: -10;
+}
+body div#main_contents div#orange_triangle {
+  background: url('../images/triangle.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 10%;
+  height: 100vh;
+  opacity: .8;
+  position: fixed;
+  left: -1400px;
+  top: 30px;
+  width: 250vw;
+  z-index: -20;
+}
+body div#main_contents div#orange_triangle2 {
+  background: url('../images/triangle.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 10%;
+  height: 100vh;
+  opacity: .8;
+  position: fixed;
+  left: -665px;
+  top: 30px;
+  width: 250vw;
+  z-index: -20;
+}
+body div#main_contents h1 {
+  background-color: #000;
+  color: #fff;
+  opacity: .7;
+  padding: 5px;
+  text-align: left;
+}
+body div#main_contents div.paragraph_container {
+  background-color: #fff;
+  margin-top: 20px;
+  opacity: .8;
+  padding: 10px;
+}
+body div#main_contents div.paragraph_container p.contents {
+  line-height: 40px;
+}

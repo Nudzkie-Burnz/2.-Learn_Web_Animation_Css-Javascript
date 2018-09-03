@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+div.animation_container {
+  background-color: yellow;
+  border: 2px solid #3c93ff;
+  height: 200px;
+  margin: 50px auto;
+  overflow: hidden;
+  padding: 20px 0px;
+  position: relative;
+  width: 450px;
+}
+div.animation_container div.circle {
+  border: 70px solid #3c93ff;
+  border-radius: 50%;
+  height: 70px;
+  position: absolute;
+  top: 15px;
+  left: 115px;
+  width: 70px;
+}

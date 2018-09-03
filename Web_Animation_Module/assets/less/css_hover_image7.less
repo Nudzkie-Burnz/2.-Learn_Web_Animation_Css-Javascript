@@ -1,0 +1,26 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	text-align: center;
+	h1{
+		font-family: sans-serif;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+	div.imagecontainer{
+		border: 5px solid #6a6a6a;
+		height: 150px;
+		margin: 50px auto;
+		overflow: hidden;
+		width: 150px;
+		img{
+			transition: transform .4s ease-in-out;
+
+			&:hover{
+				transform: translate3d(0px, -150px, 0px);
+			}
+		}
+	}
+}

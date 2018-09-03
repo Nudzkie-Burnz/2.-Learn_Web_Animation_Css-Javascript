@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body h1 {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+body #circle_container {
+  background-color: lightgrey;
+  border: 3px solid grey;
+  height: 400px;
+  margin: 50px auto;
+  overflow: hidden;
+  width: 800px;
+}
+body #circle_container #the_circle {
+  background-color: yellow;
+  border: 3px solid #9f9f19;
+  border-radius: 50%;
+  height: 100px;
+  transform: translate3d(50px, 50px, 0px);
+  transition: transform 1s cubic-bezier(0, 0.96, 0.69, 1.37);
+  width: 100px;
+}
